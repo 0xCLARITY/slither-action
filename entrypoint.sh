@@ -40,6 +40,7 @@ fail_on_flags()
     FAIL_ON_LEVEL="$(get INPUT_FAIL-ON)"
 
     if [ "$FAIL_ON_LEVEL" = "config" ]; then
+       echo "--no-fail-pedantic"
        return
     fi
 
